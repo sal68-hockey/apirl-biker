@@ -4,115 +4,121 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hells Angels History</title>
+    <title>Hells Angels: The 50s & 60s</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- ScrollReveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Popup gallery CSS (if needed) -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 </head>
 
 <body>
 
     <nav class="navbar">
         <div class="container">
-            <h1>Hells Angels The Men and Ladys Who Defined The 60s </h1>
-            <ul>
-                <li><a href="#who">Who They Were</a></li>
-                <li><a href="#what">What They Did</a></li>
-                <li><a href="#fashion">Fashion</a></li>
-                <li><a href="#impact">Impact</a></li>
-                <li><a href="#timeline">Timeline</a></li>
+            <h1 class="logo">Hells Angels: 1950s & 1960s</h1>
+            <ul class="nav-links">
+                <li><a href="#fifties">1950s</a></li>
+                <li><a href="#sixties">1960s</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#video">Documentary</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero Section with Video Background -->
     <header class="hero">
-        <div class="container">
-            <h2>The Hells Angels in the 60s & 70s</h2>
-            <p>Legendary outlaws. Rebel culture. A biker brotherhood that shook the world.</p>
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="https://www.youtube.com/watch?v=vaQcNdG1BR4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-content">
+            <h2>The Rise of the Hells Angels</h2>
+            <p>Outlaws. Rebels. Legends.</p>
         </div>
     </header>
 
-    <section id="who" class="section">
+    <!-- Scrollable Content -->
+    <section id="quotes" class="quotes fadeIn">
         <div class="container">
-            <h2>Who They Were</h2>
-            <p>From Jesse James and Butch Cassidy to Scarface and Tony Soprano, outlaws have held an ambiguous place in
-                America’s popular imagination , The Hells Angels are no exception, formed in 1948 in California. By the
-                60s, they were an infamous outlaw motorcycle club
-                built on brotherhood, rebellion, and freedom. Members lived by their own rules and often rejected
-                mainstream society.</p>
-        </div>
-    </section>
-
-    <section id="what" class="section">
-        <div class="container">
-            <h2>What They Did</h2>
-            <p>Known for wild rides and parties, the Angels also gained notoriety at the 1969 Altamont concert.
-                Accusations ranged from drug and weapon trafficking to violent crime, though members saw themselves as
-                misunderstood freedom-seekers.</p>
-        </div>
-    </section>
-
-    <section id="fashion" class="section">
-        <div class="container">
-            <h2>Fashion</h2>
-            <p>Angels wore leather jackets, denim cuts, and the iconic "death head" patch. Their fashion wasn't just
-                about looks—it was about loyalty, identity, and fearlessness. Their style influenced rockers, punks, and
-                rebels everywhere.</p>
-        </div>
-    </section>
-
-    <section id="impact" class="section">
-        <div class="container">
-            <h2>Cultural Impact</h2>
-            <p>From books like Hunter S. Thompson's *Hell’s Angels* to films like *Easy Rider*, the club became a symbol
-                of anti-establishment rebellion. Their influence is still seen in fashion, music, and outsider culture
-                today.</p>
-        </div>
-    </section>
-
-    <section class="parallax">
-        <div class="parallax-inner">
-            <h2>The Open Road</h2>
-            <p>Endless highways. Brotherhood. Freedom. The Hells Angels legacy lives on.</p>
-        </div>
-    </section>
-
-    <section id="timeline" class="section timeline">
-        <div class="container">
-            <h2>Timeline: 1960s–1970s</h2>
-            <ul id="timeline-list">
-                <li><strong>1961:</strong> Oakland chapter opens under Sonny Barger.</li>
-                <li><strong>1965:</strong> Featured in LIFE magazine.</li>
-                <li><strong>1967:</strong> Hunter S. Thompson publishes <i>Hell’s Angels</i>.</li>
-                <li><strong>1969:</strong> Altamont Free Concert ends in violence.</li>
-                <li><strong>1971:</strong> London chapter opens—first international expansion.</li>
-                <li class="extra"><strong>1973:</strong> Hells Angels feature in underground biker films.</li>
-                <li class="extra"><strong>1975:</strong> FBI begins formal surveillance and tracking.</li>
-                <li class="extra"><strong>1977:</strong> Australian and Canadian chapters launched.</li>
-                <li class="extra"><strong>1979:</strong> Nationwide raids conducted in U.S. cities.</li>
-            </ul>
-            <button class="toggle-btn" onclick="toggleTimeline()">Show More</button>
-        </div>
-    </section>
-
-    <!-- Revolving Quote Section -->
-    <section class="quote-section">
-        <div class="container">
-            <div id="quote-box">
-                <p id="quote-text">“When we do right, nobody remembers. When we do wrong, nobody forgets.”</p>
+            <h2>Famous Hells Angels Quotes</h2>
+            <div class="quote-container">
+                <p id="quote">"When you go to the top, you realize that the road up there is paved with dead bodies."
+                </p>
+                <p>- Sonny Barger</p>
             </div>
         </div>
     </section>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" title="Go to top">↑</button>
+    <!-- 1950s Section -->
+    <section id="fifties" class="section fadeIn">
+        <div class="container">
+            <h2>The 1950s: Origins & Identity</h2>
+            <img src="images/50s-image.jpg" alt="1950s Hells Angels" class="section-img">
+            <p>The 1950s were the formative years of the Hells Angels, a time when they crafted their identity as a
+                rebellious group. Their motorcycles became a symbol of freedom, and they positioned themselves in
+                opposition to the constraints of American society, standing as an anti-authority symbol.</p>
+            <p>The first chapters formed in California, and their influence started to spread throughout the United
+                States. This was the decade that set the stage for their future dominance in the motorcycle scene.</p>
+        </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- 1960s Section -->
+    <section id="sixties" class="section alt fadeIn">
+        <div class="container">
+            <h2>The 1960s: Expansion & Infamy</h2>
+            <img src="images/60s-image.jpg" alt="1960s Hells Angels" class="section-img">
+            <p>During the 1960s, the Hells Angels rose to national infamy. They became the face of rebellious
+                counterculture. By 1969, their involvement in the Altamont Free Concert solidified their infamous
+                reputation.</p>
+            <p>By the late 60s, their brand of outlaw culture had a massive influence on the hippie movement, even
+                though the two groups clashed ideologically. Their reach extended beyond California, marking them as one
+                of the most recognizable motorcycle clubs in the world.</p>
+        </div>
+    </section>
+
+    <!-- Members Gallery -->
+    <section id="members" class="section gallery fadeIn">
+        <div class="container">
+            <h2>Gallery: Early Members</h2>
+            <div class="gallery-container">
+                <div class="member-card">
+                    <img src="images/member1.jpg" alt="Johnny Blaze">
+                    <h3>Johnny Blaze</h3>
+                    <p>One of the first Oakland chapter members. Known for his bold leadership style.</p>
+                </div>
+                <div class="member-card">
+                    <img src="images/member2.jpg" alt="Sonny Barger">
+                    <h3>Sonny Barger</h3>
+                    <p>Ralph "Sonny" Barger became the president of the Oakland chapter and later the national leader.
+                    </p>
+                </div>
+                <div class="member-card">
+                    <img src="images/member3.jpg" alt="Little Joe">
+                    <h3>Little Joe</h3>
+                    <p>A founding member who was instrumental in establishing the national reputation of the Hells
+                        Angels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentary Video -->
+    <section id="video" class="section video-section">
+        <div class="container">
+            <h2>Watch the Story</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vaQcNdG1BR4"
+                    title="Hells Angels Documentary" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hells Angels History Site</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 

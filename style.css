@@ -1,154 +1,203 @@
-/* General styling */
-body {
+/* Base Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Theme Colors */
+:root {
+  --red: #8b0000;
+  --gold: #d4af37;
+  --black: #111;
+  --gray: #222;
+  --white: #f0f0f0;
+}
+
+/* Body */
+body {
   font-family: 'Segoe UI', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
   line-height: 1.6;
-  background: #121212;
-  color: #f1f1f1;
+  overflow-x: hidden;
 }
 
-.container {
-  max-width: 960px;
-  margin: auto;
-  padding: 20px;
-}
-
+/* Navbar */
 .navbar {
-  background: #1f1f1f;
-  padding: 20px;
+  background: var(--red);
+  padding: 15px 0;
+}
+
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar h1 {
-  margin: 0;
-  color: gold;
-  font-size: 2em;
-  font-weight: bold;
+.logo {
+  font-size: 1.8rem;
+  color: var(--gold);
 }
 
-.navbar ul {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
 
-.navbar a {
-  color: white;
+.nav-links li a {
+  color: var(--white);
   text-decoration: none;
-  font-size: 1.2em;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-  color: crimson;
+.nav-links li a:hover {
+  color: var(--gold);
 }
 
+/* Hero Section */
 .hero {
-  background: #1c1c1c;
-  padding: 80px 20px;
+  position: relative;
+  height: 100vh;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: white;
-  border-bottom: 5px solid crimson;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  color: var(--gold);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .hero h2 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: gold;
+  font-size: 3em;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-top: 15px;
+  font-size: 1.5em;
 }
 
+/* Quotes Section */
+.quotes {
+  background-color: var(--black);
+  padding: 60px 20px;
+}
+
+.quote-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#quote {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--gold);
+}
+
+/* Sections */
 .section {
   padding: 60px 20px;
-  background: #1a1a1a;
-  border-bottom: 3px solid #333;
+  background-color: var(--black);
 }
 
-h2 {
-  font-size: 2em;
-  font-weight: bold;
-  color: gold;
-  margin-bottom: 15px;
+.section.alt {
+  background-color: var(--gray);
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.toggle-btn {
-  background-color: crimson;
-  color: white;
-  border: none;
-  padding: 0.6em 1.2em;
-  border-radius: 20px;
-  font-size: 1.1em;
-  cursor: pointer;
-  margin-top: 1em;
-}
-
-.toggle-btn:hover {
-  background-color: darkred;
-}
-
-.parallax {
-  background-image: url('images/hells-angels-bg.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  color: white;
+.section h2 {
+  color: var(--gold);
+  margin-bottom: 20px;
   text-align: center;
-  padding: 100px 20px;
 }
 
-.parallax-inner {
-  background: rgba(0, 0, 0, 0.7);
-  display: inline-block;
-  padding: 40px;
-  border-radius: 12px;
-  font-size: 1.2em;
+.section-img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
 }
 
-.quote-section {
-  background: #1c1c1c;
+/* Gallery Section */
+.gallery-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.member-card {
+  background-color: var(--gray);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: scale(1.1);
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.member-card h3 {
+  color: var(--gold);
+  margin-top: 10px;
+}
+
+.member-card p {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+/* Scroll Animations */
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Video Section */
+.video-section {
   padding: 60px 20px;
+  background: #1a1a1a;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px;
   text-align: center;
-  color: #f1f1f1;
-}
-
-#quote-box {
-  font-style: italic;
-  font-size: 1.5em;
-  border-left: 4px solid gold;
-  padding-left: 20px;
-  max-width: 700px;
-  margin: 0 auto;
-  transition: opacity 0.5s ease-in-out;
-}
-
-#backToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: crimson;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-size: 1.5em;
-  cursor: pointer;
-  display: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-#backToTop:hover {
-  background-color: darkred;
+  color: var(--white);
 }
