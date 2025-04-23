@@ -201,3 +201,115 @@ body {
   text-align: center;
   color: var(--white);
 }
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #f3f3f3;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Carousel Container */
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 3rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  background-color: #000;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+/* Carousel Track */
+.carousel-track-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding: 0 2rem;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.carousel-img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.05);
+}
+
+/* Member Name & Description */
+.member-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f3f3f3;
+  margin: 1rem 0 0.5rem;
+}
+
+.member-description {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .carousel-btn {
+      font-size: 1.5rem;
+      padding: 0.6rem;
+  }
+
+  .carousel-img {
+      width: 90%;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+}
