@@ -1,4 +1,3 @@
-
 const quotes = [
   '"When you go to the top, you realize that the road up there is paved with dead bodies." - Sonny Barger',
   '"I don\'t believe in God, but I believe in the Hells Angels." - Unknown',
